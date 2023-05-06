@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export default function Join(props){
     let cardList = props.cardList;
-    let madeGame = false;
+    let generatedCardId = 101;
 
     function updateAttendance(i, card){
         if(card.joined == false){
@@ -26,14 +26,8 @@ export default function Join(props){
     }
 
     function insertGame(title, level, location, day, time, description){
-        if(madeGame == true){
-            document.getElementById('xyz').innerHTML += '<div class="card"><h3>' + title + '</h3><p>Who: ' + level + '<br>Where: ' + location + '<br>When: ' + day + ' @ ' + time + '<br>What: ' + description + '<br><br>Current Attendance: 1</p><br>';
-        }
-        else{
-            madeGame = true;
-            document.getElementById('abc').innerHTML += '<p><strong>My games: </strong></p><br>';
-            document.getElementById('xyz').innerHTML += '<div class="card"><h3>' + title + '</h3><p>Who: ' + level + '<br>Where: ' + location + '<br>When: ' + day + ' @ ' + time + '<br>What: ' + description + '<br><br>Current Attendance: 1</p><br>';
-        }
+        document.getElementById('xyz').innerHTML += '<div class="card"><h3>' + title + '</h3><p>Who: ' + level + '<br>Where: ' + location + '<br>When: ' + day + ' @ ' + time + '<br>What: ' + description + '<br><br>Current Attendance: 1</p><button class="btn2">Hosting</button></div>';
+        generatedCardId = generatedCardId + 1;
     }
 
     return (
@@ -77,7 +71,6 @@ export default function Join(props){
                              ))}
                         </div>
                         <div className="cards" id="abc"></div>
-                        <br></br>
                         <div className="cards" id="xyz"></div>
                     </div>
                 </section>
