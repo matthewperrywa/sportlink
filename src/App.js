@@ -76,6 +76,7 @@ export default function App(){
     ];
     return(
         <div>
+            <About />
             <Join cardList={cardList}/>
         </div>
     )
