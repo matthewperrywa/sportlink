@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+    rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="sp.css" />
+    
+    <link 
+      rel="stylesheet" 
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""
+    />
+    <script 
+    defer
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="">  
+    </script>
+
+    <script defer src="sp.js"></script>
+    <title>SportsLink</title>
+  </head>
+  <body>
+        <section class="host__section">
+            <div class="section__title" id="host">
+                <h2 class="section__description">Host a Game</h2>
+                <h3 class="section_header">Create a game and start playing now!</h3> 
+            </div>
+
+
+        <div class="host_section" id="host">
+            <div class="sidebar">
+                <ul class="created__games">
+                    <form class="form hidden">
+                        <div class="form__row">
+                            <label class="form_label">Title</label>
+                            <input class="form__input form__input--title" placeholder="Event Title"/>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__label">Skill</label>
+                            <select class="form__input form__input--skill">
+                                <option value="casual">Casual</option>
+                                <option value="casual">Competitive</option>
+                                <option value="casual">High School</option>
+                                <option value="casual">College</option>
+                                <option value="casual">Semi-Pro</option>
+                            </select>
+                        </div>
+                        <div class="form__row">
+                            <label class="form_label">Date</label>
+                            <input class="form__input form__input--date" placeholder="Event Date"/>
+                        </div>
+                        <div class="form__row">
+                            <label class="form_label">Time</label>
+                            <input class="form__input form__input--time" placeholder="Event Time"/>
+                        </div>
+                        <div>
+                            <label class="form__label">Location</label>
+                            <input class="form__input form__input--location" placeholder="Location Name"/>
+                        </div>
+                        <div>
+                            <label class="form__label">Description</label>
+                            <input class="form__input form__input--description" placeholder="Event Description"/>
+                        </div>
+                        <div>
+                            <button class="submit__btn" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </ul>
+            </div>
+            <div id="map"></div>
+        </div>
+   
+    </section>
+  </body>
+  </html>
+
+    <!-- <section class="host section">
+        <div class="host_heading">
+            <h2 class="host__title">Host a Game</h2>
+            <h3 class="host__description">
+            Have a location in mind for the perfect game? Select a location on the provided map, fill out the event details, and start attracting players now!
+            </h3>
+        </div>
+
+        <form>
+            <div>
+                <label for="title">Title:</label>
+                <input type="test" id="title" name="title" placeholder="Event Title">
+    
+                <label for="skill">Skill Level:</label>
+                <input type="test" id="skill" name="skill" placeholder="Player skill level">
+            </div>
+            <label for="Date">Date:</label>
+            <input type="test" id="date" name="date" placeholder="Event Date">
+
+            <label for="title">Time:</label>
+            <input type="test" id="time" name="time" placeholder="Event Time">
+            
+
+            
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+
+        <form class ="form_map">
+            <div class="form__row">
+                <label class="form__label">Sport</label>
+            </div>
+        </form> -->
+
+        <!-- <div id="map"></div>
+    </section>  -->
+  <!-- sport
+  title
+  time
+  date
+  location -->
