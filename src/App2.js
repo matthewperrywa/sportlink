@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import About from "./About"
 import Join from "./Join"
 
 export default function App2(){
@@ -73,7 +72,6 @@ export default function App2(){
     ];
     return(
         <div>
-            <About />
             <Join cardList={cardList}/>
         </div>
     )

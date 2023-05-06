@@ -5,6 +5,12 @@
     font-family: sans-serif;
 }
 
+#myImage{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
 body{
     background-color: whitesmoke;
     color: black;

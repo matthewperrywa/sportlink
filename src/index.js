@@ -116,14 +116,6 @@ class App {
       
       insertGame(inputTitle.value, inputSkill.value, inputLocation.value, inputDate.value, inputTime.value, inputDescription.value)
 
-      //clear input string
-
-      inputTitle.value = '';
-      inputSkill.value = 'Casual';
-      inputLocation.value = '';
-      inputTime.value = '';
-      inputDate.value = '';
-      inputDescription.value = '';
   }
 }
 
