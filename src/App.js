@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import ReactDOM from 'react-dom/client';
 import About from "./About"
-import Host from "./Host"
 import Join from "./Join"
-import NavBar from "./NavBar"
+import Endorsements from "./Endorsements"
 
 export default function App(){
     let cardList = [
@@ -78,6 +76,7 @@ export default function App(){
         <div>
             <About />
             <Join cardList={cardList}/>
+            <Endorsements />
         </div>
     )
 }
