@@ -6,6 +6,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -25,20 +26,82 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+    rel="stylesheet"
+    />
+    
+    <link 
+      rel="stylesheet" 
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""
+    />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script 
+    defer
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="">  
+    </script>
+    <title>SportLink</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <section><div class="container"><div class="cards" id="xyz"></div></div></section>
+    <!---------------------------------------------------------------------------------------------------------->
+  <section class="host__section">
+      <div class="section__title" id="host">
+          <h2 class="section__description">Host a Game</h2>
+          <h3 class="section_header">Create a game and start playing now!</h3> 
+      </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+  <div class="host_section" id="host">
+      <div class="sidebar">
+          <ul class="created__games">
+              <form class="form hidden">
+                  <div class="form__row">
+                      <label class="form_label">Title</label>
+                      <input class="form__input form__input--title" placeholder="Event Title"/>
+                  </div>
+                  <div class="form__row">
+                      <label class="form__label">Skill</label>
+                      <select class="form__input form__input--skill" defaultValue="casual">
+                          <option value="Casual">Casual</option>
+                          <option value="Competitive">Competitive</option>
+                          <option value="High School">High School</option>
+                          <option value="College">College</option>
+                          <option value="Semi-pro">Semi-Pro</option>
+                      </select>
+                  </div>
+                  <div class="form__row">
+                      <label class="form_label">Date</label>
+                      <input class="form__input form__input--date" placeholder="Event Date"/>
+                  </div>
+                  <div class="form__row">
+                      <label class="form_label">Time</label>
+                      <input class="form__input form__input--time" placeholder="Event Time"/>
+                  </div>
+                  <div>
+                      <label class="form__label">Location</label>
+                      <input class="form__input form__input--location" placeholder="Location Name"/>
+                  </div>
+                  <div>
+                      <label class="form__label">Description</label>
+                      <input class="form__input form__input--description" placeholder="Event Description"/>
+                  </div>
+                  <div>
+                      <button class="submit__btn" type="submit">Submit</button>
+                  </div>
+              </form>
+          </ul>
+      </div>
+      <div id="map"></div>
+  </div>
+
+  </section>
+<!---------------------------------------------------------------------------------------------------------->
+<div id="root2">
+  <h1>Endorsements</h1>
+  <img id="myImage" src="shaqSportLink.png" width="50%" height="50%">
+</div>
   </body>
 </html>

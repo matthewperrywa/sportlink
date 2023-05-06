@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 export default function Join(props){
     let cardList = props.cardList;
-    let generatedCardId = 101;
 
     function updateAttendance(i, card){
         if(card.joined == false){
@@ -25,11 +24,6 @@ export default function Join(props){
         "Current Attendance: " + card.attendance;
     }
 
-    function insertGame(title, level, location, day, time, description){
-        document.getElementById('xyz').innerHTML += '<div class="card"><h3>' + title + '</h3><p>Who: ' + level + '<br>Where: ' + location + '<br>When: ' + day + ' @ ' + time + '<br>What: ' + description + '<br><br>Current Attendance: 1</p><button class="btn2">Hosting</button></div>';
-        generatedCardId = generatedCardId + 1;
-    }
-
     return (
         <div>
             <div>
@@ -41,7 +35,6 @@ export default function Join(props){
                         <br></br>
                         <h1>Join a Game</h1>
                         <p>DESCRIPTION. DESCRIPTION. DESCRIPTION. DESCRIPTION. DESCRIPTION. DESCRIPTION. DESCRIPTION.</p>
-                        <button onClick={() => insertGame("a", "b", "c", "d", "e", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")}></button>
                         <br></br>
                         <br></br>
                         {/*
@@ -70,8 +63,6 @@ export default function Join(props){
                                 </div>
                              ))}
                         </div>
-                        <div className="cards" id="abc"></div>
-                        <div className="cards" id="xyz"></div>
                     </div>
                 </section>
             </div>

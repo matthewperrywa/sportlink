@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import About from "./About"
 import Join from "./Join"
-import Endorsements from "./Endorsements"
 
-export default function App(){
+export default function App2(){
     let cardList = [
         {
             title: 'Beginner Tennis Tournament',
@@ -76,7 +75,6 @@ export default function App(){
         <div>
             <About />
             <Join cardList={cardList}/>
-            <Endorsements />
         </div>
     )
 }
