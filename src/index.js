@@ -126,3 +126,20 @@ const app = new App();
 //     console.log(inputTitle.value ,inputSkill.value ,inputDate.value ,inputTime.value);
 // })
 
+const sectionHost = document.querySelector('#section--host');
+sectionHost.addEventListener('click', function(e){
+  e.preventDefault();
+  const hostCoords = sectionHost.getBoundingClientRect();
+
+  // //scrolling
+  // window.scrollTo(
+  //   hostCoords.left + window.pageXOffset, 
+  //   hostCoords.top + window.pageYOffset
+  //   );
+
+    window.scrollTo({
+      left: hostCoords.left + window.pageXOffset, 
+      top: hostCoords.top + window.pageYOffset,
+      behavior: 'smooth',
+    })
+})
