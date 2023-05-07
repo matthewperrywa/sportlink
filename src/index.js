@@ -168,6 +168,7 @@ sectionAbout.addEventListener('click', function(e){
   })
 })
 
+/*
 const sectionEndorsement = document.querySelector('#section--endorsement');
 sectionEndorsement.addEventListener('click', function(e){
   e.preventDefault();
@@ -179,3 +180,4 @@ sectionEndorsement.addEventListener('click', function(e){
     behavior: 'smooth',
   })
 })
+*/

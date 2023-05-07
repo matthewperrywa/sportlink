@@ -10,7 +10,7 @@ export default function App2(){
             location: '7839 Cedar Heights Drive',
             time: "9:00 AM",
             date: "May 15",
-            description: 'Indoor basketball tournament. $100 fee. Winner take home $500.',
+            description: 'Indoor basketball tournament. $100 fee. Winner takes home $500.',
             attendance: 58,
             id: 1,
             joined: false
@@ -60,12 +60,12 @@ export default function App2(){
             joined: false
         },
         {
-            title: 'Weekly Soccer 2',
+            title: 'Basketball at the Park',
             skill: 'Intermediate',
             location: 'Riverside Park',
             time: "1:30 PM",
             date: "May 21",
-            description: 'Pickup basketball. Outdoors..',
+            description: 'Pickup basketball. Outdoors.',
             attendance: 7,
             id: 6,
             joined: false
