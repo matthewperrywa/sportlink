@@ -34,7 +34,11 @@ export default function Join(props){
                         <br></br>
                         <br></br>
                         <h1>Join a Game</h1>
+                        <br></br><br></br>
+                        <div className="about">
                         <p>Find what games are best for you. Click a game to join.</p>
+                        </div>
+                        <br></br><br></br>
                         <br></br>
                         <br></br>
                         {/*

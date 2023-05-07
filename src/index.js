@@ -104,12 +104,12 @@ class App {
           .addTo(this.#map)
           .bindPopup(
               L.popup({
-              maxWidth: 250,
-              minWidth: 100,
+              maxWidth: 100,
+              minWidth: 50,
               autoClose: false,
               closeOnClick: false, 
               }))
-          .setPopupContent('Currently Hosted Game') 
+          .setPopupContent(inputTitle.value) 
           .openPopup();
 
       //Render game on list 
@@ -142,4 +142,40 @@ sectionHost.addEventListener('click', function(e){
       top: hostCoords.top + window.pageYOffset,
       behavior: 'smooth',
     })
+})
+
+const sectionJoin = document.querySelector('#section--join');
+sectionJoin.addEventListener('click', function(e){
+  e.preventDefault();
+  const joinCoords = sectionJoin.getBoundingClientRect();
+
+  window.scrollTo({
+    left: joinCoords.left + window.pageXOffset, 
+    top: joinCoords.top + window.pageYOffset,
+    behavior: 'smooth',
+  })
+})
+
+const sectionAbout = document.querySelector('#section--about');
+sectionAbout.addEventListener('click', function(e){
+  e.preventDefault();
+  const aboutCoords = sectionAbout.getBoundingClientRect();
+
+  window.scrollTo({
+    left: aboutCoords.left + window.pageXOffset, 
+    top: aboutCoords.top + window.pageYOffset,
+    behavior: 'smooth',
+  })
+})
+
+const sectionEndorsement = document.querySelector('#section--endorsement');
+sectionEndorsement.addEventListener('click', function(e){
+  e.preventDefault();
+  const endorsementCoords = sectionEndorsement.getBoundingClientRect();
+
+  window.scrollTo({
+    left: endorsementCoords.left + window.pageXOffset, 
+    top: endorsementCoords.bottom + window.pageYOffset,
+    behavior: 'smooth',
+  })
 })

@@ -3,7 +3,6 @@
   <head>
     <link rel="stylesheet" href="./style.css">
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -11,7 +10,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -26,10 +25,13 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link
-    href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+    <!-- <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600&display=swap"
     rel="stylesheet"
-    />
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     
     <link 
       rel="stylesheet" 
@@ -61,48 +63,75 @@
           <li class="navitem">
             <a class="navlink" href="#section--host">Host</a>
           </li>
-          <li class="navitem">
+          <!-- <li class="navitem">
             <a class="navlink" href="#section--endorsements">Endorsements</a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </header>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <!---------------------------------------------------------------------------------------------------------->
+    <!-- <section class="about__section" id="section--about"> -->
     <div>
       <div class="about-container">
-      <br></br>
+      <br></br><br></br><br></br><br></br><br></br>
+
       <img src="sportLinkPurple.png" alt="SportLink Logo" class="about-image"></img>
-      <br></br>
+      <br></br><br></br>
       <h2>Connecting you to the sports you love with the people who play them</h2>
       </div>
       <div class="about-text">
-          <br></br>
-          <br></br>
-          <p>SportLink is a website for joining and creating sports games.<br>From joining pickup games to hosting tournaments, SportLink has something for all athletes.</p>
-      </div>
+          <br></br><br></br><br></br><br></br>
+          <section class="about__section" id="section--about"></section>
+          <div class="about-container">
+          <h1>About</h1>
+          <p>
+            SportLink is your destination for joining and creating games based on the sports you love. Whether you're looking to play for the first time or if you’re an avid player, SportLink provides the organization and ease of use to enhance your pickup game experience. With customizable fields such as skill level, date, time, and location, you'll have the tools needed to find or host a game that meets your preferences.
+            <br></br><br></br>
+            Hear what people are saying about SportLink:
+            <br></br>
+          </p>
+          <p>Drake</p>    
+          <audio controls>
+            <source src="Drake_Endorsement.mp3" type="audio/mpeg">
+          </audio>
+          <p>Justin Bieber</p>
+          <audio controls>
+            <source src="Justin_Bieber_Endorsement.mp3" type="audio/mpeg">
+          </audio>
+          <br></br><br></br><br></br><br></br><br></br>
+          </p>
+        </div>
     </div>
+  <!-- </section> -->
     <!---------------------------------------------------------------------------------------------------------->
-    <div id="root"></div>
-    <section><div class="container"><div class="cards" id="xyz"></div></div></section>
+    <section class="join__section" id="section--join">
+      <div id="root"></div>
+      <section><div class="container"><div class="cards" id="xyz"></div></div></section>
+    </section>
+
     <!---------------------------------------------------------------------------------------------------------->
-  <section class="host__section" id="section--host">
-      <div class="section__title" id="host">
-          <h2 class="section__description">Host a Game</h2>
-          <h3 class="section_header">Click the map to begin. Click where you want your game to be and fill out the form to publish your game.</h3> 
-      </div>
-
-
+    <br></br><br></br><br></br><br></br>
+    <div class="container">
+      <h1 class="section__description" id="section--host">Host a Game</h1>
+      <br></br><br></br>
+      <div class="host_description">
+      <p>Click the map to begin. Click where you want your 
+      game to be and fill out the form to publish your game.</p> 
+    </div>
+    </div>
+  <section class="host__section">
+      <div class="section__title" id="host"></div>
   <div class="host_section" id="host">
       <div class="sidebar">
           <ul class="created__games">
               <form class="form hidden">
                   <div class="form__row">
-                      <label class="form_label">Title</label>
+                      <label class="form_label">Title&nbsp&nbsp</label>
                       <input class="form__input form__input--title" placeholder="Event Title"/>
                   </div>
                   <div class="form__row">
-                      <label class="form__label">Skill</label>
+                      <label class="form__label">Skill&nbsp&nbsp</label>
                       <select class="form__input form__input--skill" defaultValue="casual">
                           <option value="Casual">Casual</option>
                           <option value="Competitive">Competitive</option>
@@ -112,19 +141,19 @@
                       </select>
                   </div>
                   <div class="form__row">
-                      <label class="form_label">Date</label>
+                      <label class="form_label">Date&nbsp&nbsp</label>
                       <input class="form__input form__input--date" placeholder="Event Date"/>
                   </div>
                   <div class="form__row">
-                      <label class="form_label">Time</label>
+                      <label class="form_label">Time&nbsp&nbsp</label>
                       <input class="form__input form__input--time" placeholder="Event Time"/>
                   </div>
                   <div>
-                      <label class="form__label">Location</label>
+                      <label class="form__label">Location&nbsp</label>
                       <input class="form__input form__input--location" placeholder="Location Name"/>
                   </div>
                   <div>
-                      <label class="form__label">Description</label>
+                      <label class="form__label">Description&nbsp</label>
                       <input class="form__input form__input--description" placeholder="Event Description"/>
                   </div>
                   <div>
@@ -135,22 +164,27 @@
       </div>
       <div id="map"></div>
   </div>
-
+  <br></br><br></br><br></br><br></br>
   </section>
 <!---------------------------------------------------------------------------------------------------------->
-<div id="root2">
-  <h1>Endorsements</h1>
-  <img id="myImage" src="shaqSportLink.png" width="50%" height="50%">
-  <br>
-  <br>
-  <br>
-  <br>
-  <img id="myImage" src="johnCenaSportLink.png" width="50%" height="50%">
-  <br>
-  <br>
-  <br>
-  <br>
-  <img id="myImage" src="vinDieselSportLink.png" width="50%" height="50%">
-</div>
-  </body>
+
+  <section class="endorsement__section" id="section--endorsement">
+    <div id="root2">
+      <h1>Endorsements</h1>
+      <br></br><br></br>
+      <img id="myImage" src="shaqSportLink.png" width="50%" height="50%">
+      <br>
+      <br>
+      <br>
+      <br>
+      <img id="myImage" src="johnCenaSportLink.png" width="50%" height="50%">
+      <br>
+      <br>
+      <br>
+      <br>
+      <img id="myImage" src="vinDieselSportLink.png" width="50%" height="50%">
+    </div>
+  </section>
+  
+</body>
 </html>
