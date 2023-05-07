@@ -5,7 +5,7 @@ Matthew Perry and Ryan Leveck's submission for University of Washington Bothell'
 
 SportLink is a website for finding, creating, and joining pickup basketball games in your area.
 
-The website allows users to join existing games in their area as well as create their own. Each of these games has various info, including location, skill level, and current attendance that helps people find the games they are interested in. The website is currently a prototype. While we do not have a back-end, the website displays how SportLink would function and how the user could interact with it. We plan to add a back-end in the future to make the website fulfill its goals.
+The website allows users to join existing games in their area as well as create their own. Each of these games has various info, including location, skill level, and current attendance that help people find the games they are interested in. The website is currently a prototype and while we do not have a back-end, the website displays how SportLink would function and how the user could interact with it. We plan to add a back-end in the future to make the website fulfill its goals.
 
 We used JavaScript, React, Leaflet, geolocation API, SoftVC VITS Singing Voice Conversion AI, HTML, and CSS to create the website.
 
