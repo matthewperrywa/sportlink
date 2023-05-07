@@ -37,7 +37,7 @@ const inputSkill = document.querySelector('.form__input--skill');
 const inputDate = document.querySelector('.form__input--date');
 const inputTime = document.querySelector('.form__input--time');
 const inputLocation = document.querySelector('.form__input--location');
-const inputDescription = document.querySelector('.form__input--location');
+const inputDescription = document.querySelector('.form__input--description');
 
 
 class App {
